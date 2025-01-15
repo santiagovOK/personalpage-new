@@ -1,0 +1,59 @@
+header {
+    height: 1200px;
+}
+
+header section {
+    flex-direction: row;
+    margin-top: 60px;
+    align-self: center;
+    max-width: 1500px;
+
+}
+
+.header--name-container {
+    font-size: 3.5rem;
+    min-height: 485px;
+}
+
+.header--name-container img {
+    max-height: 400px;
+    
+}
+
+.header--bio-container {
+    margin-right: 40px;
+    font-size: 3rem;
+}
+
+.header--social-container {
+    padding: 5px;
+    margin-top: 50px;
+    min-width: none;
+    border-radius: 20px;
+    
+}
+
+.header--social-container .twitter {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.header--social-container .threads {
+    width: 50px;
+    height: 50px;
+}
+
+.header--social-container .linkedin {
+    width: 50px;
+    height: 50px;
+}
+
+.header--social-container .github {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
