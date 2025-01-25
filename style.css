@@ -93,9 +93,7 @@ html {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 5px 0 5px;
 }
 
 .header__social-container .social-icon:hover {
@@ -105,40 +103,6 @@ html {
 .header__social-container .social-icon:active {
     background-color: #e0e0e0;
     transform: scale(0.85);
-}
-
-.header__social-container .social-icon--twitter {
-    background-image: url(assets/icons/x-logo.svg);
-}
-
-.header__social-container .social-icon--threads {
-    background-image: url(assets/icons/threads.svg);
-    margin-left: 10px;
-}
-
-.header__social-container .social-icon--linkedin {
-    background-image: url(assets/icons/linkedin-logo.svg);
-    margin-left: 10px;
-}
-
-.header__social-container .social-icon--github {
-    background-image: url(assets/icons/github-icon.svg);
-    margin-left: 10px;
-}
-
-.header__social-container .social-icon--facebook {
-    background-image: url(assets/icons/facebook-icon.png);
-    margin-left: 10px;
-}
-
-.header__social-container .social-icon--youtube {
-    background-image: url(assets/icons/youtube-icon.png);
-    margin-left: 10px;
-}
-
-.header__social-container .social-icon--bluesky {
-    background-image: url(assets/icons/bluesky-icon.png);
-    margin-left: 10px;
 }
 
 .header__language-container {
