@@ -16,13 +16,6 @@
     }
 }
 
-/* :root {
-     Colores 
-    --color-one: 
-     ...
-
-} */
-
 html {
     font-size: 62.5%;
     font-family: "Sedan", serif;
@@ -32,8 +25,7 @@ html {
     background-color: #181A1B;
 }
 
-
-header {
+.header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,31 +35,30 @@ header {
     margin: 0 auto;
 }
 
-header section {
+.header__section {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     min-width: 320px;
-    
 }
 
- .header--name-container {
+.header__name-container {
     width: 60%;
     align-self: center;
     text-align: center;
     min-width: 300px;
     font-size: 2.2rem;
-
 }
 
-.header--name-container img {
+.header__name-container-img {
     width: 60%;
     margin-top: 20px;
     max-height: 200px;
     border-radius: 30px;
     border: 3px rgba(47, 53, 92, 1) solid;
 }
-.header--bio-container {
+
+.header__bio-container {
     width: 60%;
     margin-top: 5px;
     min-width: 300px;
@@ -76,15 +67,15 @@ header section {
     font-size: 1.3rem;
 }
 
-.header--bio-container h2 {
+.header__bio-container-h2 {
     margin: 20px;
 }
 
-.header--bio-container p {
+.header__bio-container-p {
     margin: 20px;
 }
 
-.header--social-container {
+.header__social-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -98,177 +89,81 @@ header section {
     animation: borderAnimation 1s infinite;
 }
 
-.header--social-container .twitter {    
+.header__social-container .social-icon {
     display: inline-block;
     width: 25px;
     height: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__social-container .social-icon:hover {
+    transform: scale(1.15);
+}
+
+.header__social-container .social-icon:active {
+    background-color: #e0e0e0;
+    transform: scale(0.85);
+}
+
+.header__social-container .social-icon--twitter {
     background-image: url(assets/icons/x-logo.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.header--social-container .twitter:hover {
-    transform: scale(1.15);
-}  
-
-.header--social-container .twitter:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-  
-
-.header--social-container .threads {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+.header__social-container .social-icon--threads {
     background-image: url(assets/icons/threads.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header--social-container .threads:hover {
-    transform: scale(1.15);
-}
-
-.header--social-container .threads:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-.header--social-container .linkedin {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     margin-left: 10px;
+}
+
+.header__social-container .social-icon--linkedin {
     background-image: url(assets/icons/linkedin-logo.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header--social-container .linkedin:hover {
-    transform: scale(1.15);
-} 
-
-.header--social-container .linkedin:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-.header--social-container .github {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     margin-left: 10px;
+}
+
+.header__social-container .social-icon--github {
     background-image: url(assets/icons/github-icon.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header--social-container .github:hover {
-    transform: scale(1.15);
-}
-
-.header--social-container .github:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-.header--social-container .facebook {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     margin-left: 10px;
+}
+
+.header__social-container .social-icon--facebook {
     background-image: url(assets/icons/facebook-icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header--social-container .facebook:hover {
-    transform: scale(1.15);
-}
-
-.header--social-container .facebook:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-.header--social-container .youtube {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     margin-left: 10px;
+}
+
+.header__social-container .social-icon--youtube {
     background-image: url(assets/icons/youtube-icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header--social-container .youtube:hover {
-    transform: scale(1.15);
-}
-
-.header--social-container .youtube:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-.header--social-container .bluesky {    
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     margin-left: 10px;
+}
+
+.header__social-container .social-icon--bluesky {
     background-image: url(assets/icons/bluesky-icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-left: 10px;
 }
 
-.header--social-container .bluesky:hover {
-    transform: scale(1.15);
-}
-
-.header--social-container .bluesky:active {
-    background-color: #e0e0e0; 
-    transform: scale(0.85); 
-}
-
-
-.header--language-container {
+.header__language-container {
     display: flex;
     justify-content: center;
     align-self: center;
     min-width: 200px;
     margin-top: 10px;
     border-radius: 30px;
-    
 }
 
-.header--language-container .language {
+.header__language-container .language-icon {
     display: inline-block;
     width: 25px;
     height: 25px;
     margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__language-container .language-icon--spanish {
     background-image: url(assets/icons/spanish-icon.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.header--language-container .language2 {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+.header__language-container .language-icon--english {
     background-image: url(assets/icons/english-icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-
-

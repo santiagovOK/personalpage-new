@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +7,37 @@
     <meta name="robots" content="index,follow">
     <title>Página Web de Santiago Varela</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 610px)" >
-<!--     <link rel="stylesheet" href="css/desktop.css" media="(min-width: 930px)" > -->
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 610px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-    
-    <section>
-        <div class="header--name-container">
-            <h1><u>Santiago Varela</u></h1>
-            <img src="assets/img/imageTwo.jpg" alt="Foto de perfil de Santiago" title="Foto de perfil">
+    <header class="header">
+        <section class="header__section">
+            <div class="header__name-container">
+                <h1 class="header__name-container-h1"><u>Santiago Varela</u></h1>
+                <img class="header__name-container-img" src="assets/img/imageTwo.jpg" alt="Foto de perfil de Santiago" title="Foto de perfil">
+            </div>
+            <div class="header__bio-container">
+                <h2 class="header__bio-container-h2">Soy estudiante de desarrollo web, esta es mi primera y humilde página estática.</h2>
+                <p class="header__bio-container-p">En este momento estudio las bases sobre lógica de programación, <u>HTML, CSS y JavaScript</u>, en búsqueda de reorientar mi carrera profesional.</p>
+                <p class="header__bio-container-p">Tengo experiencia trabajando como freelancer en gestión y curación de datos. Además, me encuentro profundizando mis conocimientos sobre <u>Linux</u> y <u>Bash</u>.</p>
+                <p class="header__bio-container-p">¡Seguime en mis <u>redes sociales</u> si me querés acompañar en este camino y ver mis proyectos!</p>
+            </div>
+        </section>
+        <section class="header__social-container">
+            <div><a href="https://x.com/santiagovrela" title="Mi perfil de X" rel="noopener" target="_blank"><span class="social-icon social-icon--twitter"></span></a></div>
+            <div><a href="https://www.threads.net/@santiagovrela" title="Mi perfil en Threads" rel="noopener" target="_blank"><span class="social-icon social-icon--threads"></span></a></div>
+            <div><a href="https://www.linkedin.com/in/santiagovrela/" title="Mi perfil en LinkedIn" rel="noopener" target="_blank"><span class="social-icon social-icon--linkedin"></span></a></div>
+            <div><a href="https://github.com/santiagovOK" title="Mi perfil en GitHub (en construcción, dame tiempo por favor)" rel="noopener" target="_blank"><span class="social-icon social-icon--github"></span></a></div>
+            <div><a href="https://www.facebook.com/profile.php?id=61558760142791" title="Mi página de Facebook" rel="noopener" target="_blank"><span class="social-icon social-icon--facebook"></span></a></div>
+            <div><a href="https://www.youtube.com/@santiagovrela" title="Mi canal de Youtube" rel="noopener" target="_blank"><span class="social-icon social-icon--youtube"></span></a></div>
+            <div><a href="https://bsky.app/profile/acertaindev.com" title="Mi perfil en Bluesky" rel="noopener" target="_blank"><span class="social-icon social-icon--bluesky"></span></a></div>
+        </section>
+        <div class="header__language-container">
+            <p><a href="index.html" title="Version en Inglés"><span class="language-icon language-icon--english"></span></a></p>
         </div>
-
-        <div class="header--bio-container">
-
-           <h2>Soy estudiante de desarrollo web, esta es mi primera y humilde página estática.</h2>
-
-            <p>En este momento estudio las bases sobre lógica de programación, <u>HTML, CSS y JavaScript</u>, en búsqueda de reorientar mi carrera profesional.</p>
-            <p>Tengo experiencia trabajando como freelancer en gestión y curación de datos. Además, me encuentro profundizando mis conocimientos sobre <u>Linux</u> y <u>Bash</u>.
-            </p>
-            <p>¡Seguime en mis <u>redes sociales</u> si me querés acompañar en este camino y ver mis proyectos!</p>
-
-        </div>
-
-    </section>
-
-    <section class="header--social-container">
-
-        <div><a href="https://x.com/santiagovrela" title="Mi perfil de X" rel="noopener" target="_blank"><span class="twitter"></span></a></div>
-        <div><a href="https://www.threads.net/@santiagovrela" title="Mi perfil en Threads" rel="noopener" target="_blank"><span class="threads"></span></a></div>
-        <div><a href="https://www.linkedin.com/in/santiagovrela/" title="Mi perfil en LinkedIn" rel="noopener" target="_blank"><span class="linkedin"></span></a></div>
-        <div><a href="https://github.com/santiagovOK" title="Mi perfil en GitHub (en construcción, dame tiempo por favor)" rel="noopener" target="_blank"><span class="github"></span></a></div>
-        <div><a href="https://www.facebook.com/profile.php?id=61558760142791" title="Mi página de Facebook" rel="noopener" target="_blank"><span class="facebook"></span></a></div>
-        <div><a href="https://www.youtube.com/@santiagovrela" title="Mi canal de Youtube" rel="noopener" target="_blank"><span class="youtube"></span></a></div>
-        <div><a href="https://bsky.app/profile/acertaindev.com" title="Mi perfil en Bluesky" rel="noopener" target="_blank"><span class="bluesky"></span></a></div>
-
-    </section>
-
-    <div class="header--language-container">
-
-        <p><a href="index.html" title="Version en Inglés"><span class="language2"></span></a></p>
-
-    </div>
-
-</header>
-
-
-    
+    </header>
 </body>
 </html>

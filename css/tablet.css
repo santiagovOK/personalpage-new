@@ -1,12 +1,12 @@
-.header--name-container {
+.header__name-container {
     font-size: 2.5rem;
 }
 
-.header--name-container img {
+.header__name-container-img {
     max-height: 300px;
     margin-top: 40px;
 }
 
-.header--bio-container {
+.header__bio-container {
     font-size: 2rem;
 }
