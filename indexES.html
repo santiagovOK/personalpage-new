@@ -30,38 +30,54 @@
                 <h2 class="header__bio-container-h2">Soy estudiante de desarrollo web, esta es mi primera y humilde
                     página estática.</h2>
                 <p class="header__bio-container-p">En este momento estudio las bases sobre lógica de programación,
-                    <u>HTML, CSS y JavaScript</u>, en búsqueda de reorientar mi carrera profesional.</p>
+                    <u>HTML, CSS y JavaScript</u>, en búsqueda de reorientar mi carrera profesional.
+                </p>
                 <p class="header__bio-container-p">Tengo experiencia trabajando como freelancer en gestión y curación de
                     datos. Además, me encuentro profundizando mis conocimientos sobre <u>Linux</u> y <u>Bash</u>.</p>
                 <p class="header__bio-container-p">¡Seguime en mis <u>redes sociales</u> si me querés acompañar en este
                     camino y ver mis proyectos!</p>
             </div>
         </section>
-        <section class="header__social-container">
-            <div><a href="https://x.com/santiagovrela" title="Mi perfil de X" rel="noopener" target="_blank"><img
-                        src="assets/icons/x-logo.svg" alt="X" class="social-icon"></a></div>
-            <div><a href="https://www.threads.net/@santiagovrela" title="Mi perfil en Threads" rel="noopener"
-                    target="_blank"><img src="assets/icons/threads.svg" alt="Threads" class="social-icon"></a></div>
-            <div><a href="https://www.linkedin.com/in/santiagovrela/" title="Mi perfil en LinkedIn" rel="noopener"
-                    target="_blank"><img src="assets/icons/linkedin-logo.svg" alt="LinkedIn" class="social-icon"></a>
-            </div>
-            <div><a href="https://github.com/santiagovOK"
-                    title="Mi perfil en GitHub (en construcción, dame tiempo por favor)" rel="noopener"
-                    target="_blank"><img src="assets/icons/github-icon.svg" alt="GitHub" class="social-icon"></a></div>
-            <div><a href="https://www.facebook.com/profile.php?id=61558760142791" title="Mi página de Facebook"
-                    rel="noopener" target="_blank"><img src="assets/icons/facebook-icon.png" alt="Facebook"
-                        class="social-icon"></a></div>
-            <div><a href="https://www.youtube.com/@santiagovrela" title="Mi canal de Youtube" rel="noopener"
-                    target="_blank"><img src="assets/icons/youtube-icon.png" alt="YouTube" class="social-icon"></a>
-            </div>
-            <div><a href="https://bsky.app/profile/acertaindev.com" title="Mi perfil en Bluesky" rel="noopener"
-                    target="_blank"><img src="assets/icons/bluesky-icon.png" alt="Bluesky" class="social-icon"></a>
-            </div>
-        </section>
-        <div class="header__language-container">
-            <p><a href="index.html" title="Version en Inglés"><span
-                        class="language-icon language-icon--english"></span></a></p>
-        </div>
+        <nav class="header__social-container">
+            <ul class="header__social-list">
+                <li class="header__social-item"><a href="https://x.com/santiagovrela" title="Mi perfil de X"
+                        rel="noopener" target="_blank"><img src="assets/icons/x-logo.svg" alt="X"
+                            class="header__social-icon"></a></li>
+                <li class="header__social-item"><a href="https://www.threads.net/@santiagovrela"
+                        title="Mi perfil en Threads" rel="noopener" target="_blank"><img src="assets/icons/threads.svg"
+                            alt="Threads" class="header__social-icon"></a></li>
+                <li class="header__social-item"><a href="https://www.linkedin.com/in/santiagovrela/"
+                        title="Mi perfil en LinkedIn" rel="noopener" target="_blank"><img
+                            src="assets/icons/linkedin-logo.svg" alt="LinkedIn" class="header__social-icon"></a>
+                </li>
+                <li class="header__social-item"><a href="https://github.com/santiagovOK"
+                        title="Mi perfil en GitHub (en construcción, dame tiempo por favor)" rel="noopener"
+                        target="_blank"><img src="assets/icons/github-icon.svg" alt="GitHub"
+                            class="header__social-icon"></a></li>
+                <li class="header__social-item"><a href="https://www.facebook.com/profile.php?id=61558760142791"
+                        title="Mi página de Facebook" rel="noopener" target="_blank"><img
+                            src="assets/icons/facebook-icon.png" alt="Facebook" class="header__social-icon"></a></li>
+                <li class="header__social-item"><a href="https://www.youtube.com/@santiagovrela"
+                        title="Mi canal de Youtube" rel="noopener" target="_blank"><img
+                            src="assets/icons/youtube-icon.png" alt="YouTube" class="header__social-icon"></a>
+                </li>
+                <li class="header__social-item"><a href="https://bsky.app/profile/acertaindev.com"
+                        title="Mi perfil en Bluesky" rel="noopener" target="_blank"><img
+                            src="assets/icons/bluesky-icon.png" alt="Bluesky" class="header__social-icon"></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__language-container">
+            <ul class="header__language-list">
+                <li class="header__language-item">
+                    <button class="header__language-button" aria-label="English version"
+                        onclick="window.location.href='index.html'">
+                        <img class="header__language-icon" src="assets/icons/english-icon.png" alt="English version"
+                            title="Versión en Inglés">
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </header>
 </body>
 

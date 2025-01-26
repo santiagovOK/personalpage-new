@@ -75,6 +75,7 @@ html {
     margin: 20px;
 }
 
+/* notSync/personalpage-new/style.css (78-106) */
 .header__social-container {
     display: flex;
     flex-direction: row;
@@ -89,18 +90,28 @@ html {
     animation: borderAnimation 1s infinite;
 }
 
-.header__social-container .social-icon {
+.header__social-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header__social-item {
+    margin: 0 5px;
+}
+
+.header__social-icon {
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin: 0 5px 0 5px;
 }
 
-.header__social-container .social-icon:hover {
+.header__social-icon:hover {
     transform: scale(1.15);
 }
 
-.header__social-container .social-icon:active {
+.header__social-icon:active {
     background-color: #e0e0e0;
     transform: scale(0.85);
 }
@@ -114,20 +125,25 @@ html {
     border-radius: 30px;
 }
 
-.header__language-container .language-icon {
-    display: inline-block;
+.header__language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header__language-item {
+    margin: 0 5px;
+}
+
+.header__language-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header__language-icon {
     width: 25px;
     height: 25px;
-    margin-left: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header__language-container .language-icon--spanish {
-    background-image: url(assets/icons/spanish-icon.svg);
-}
-
-.header__language-container .language-icon--english {
-    background-image: url(assets/icons/english-icon.png);
 }
