@@ -1,0 +1,21 @@
+{
+  "name": "personalpage-new",
+  "version": "1.0.0",
+  "description": "A personal page project with GitHub Actions deployment",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp tracker.js dist/ && sed -i 's/__METRICOOL_HASH__/$METRICOOL_HASH/g' dist/tracker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santiagovok/personalpage-new.git"
+  },
+  "keywords": [
+    "personalpage",
+    "web",
+    "portfolio"
+  ],
+  "author": "Santiago Varela",
+  "license": "MIT",
+  "dependencies": {}
+}
