@@ -9,5 +9,5 @@ function loadScript(callback) {
 }
 
 loadScript(function() {
-    beTracker.t({ hash: "__METRICOOL_HASH__" });
+    beTracker.t({ hash: "9e3c740bab30e397abd54e5a061451f9" });
 });
